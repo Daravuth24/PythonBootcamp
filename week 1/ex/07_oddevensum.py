@@ -1,31 +1,21 @@
-num = []
-oddSum = []
+num = input("Input a number:")
 evenSum = []
-# def innum(num):
-#     check = ""
-#     while check != "stop":
-#         num1 = int(input("Input a number:"))
-#         num.append(num1)
-#         check = input("Input stop to stop:")
-#         print(num)
-def innum(num):
-    check = ""
-    while check != "stop":
-        try:
-            num1 = int(input("input number:"))
-            num.append(num1)
-            print(num)
-        except ValueError:
-            print("Not a valid number")
-        check = input("Input stop to stop:")
-def oddandeven(num):
-    for i in num:
-        if i % 2 == 1:
-            oddSum.append(i)
-        else:
-            evenSum.append(i)
-    print(oddSum)
-    print(evenSum)
+oddSum = []
+def checkevenodd(num):
+    try:
+        for j in range (1, int(num)):
+            if j % 2 == 1:
+                oddSum.append(j)
+        print(f"Sum of odd numbers = {sum(oddSum)}")
+    except ValueError:
+        print("Invalid Input")
+        print("Sum of odd numbers = 0")
+    try:
+        for i in range (1,int(num)):
+            if i % 2 == 0:
+                evenSum.append(i)
+        print(f"Sum of even numbers = {sum(evenSum)}")
+    except ValueError:
+        print("Sum of even numbers = 0")
 
-innum(num)
-oddandeven(num)
+checkevenodd(num)
