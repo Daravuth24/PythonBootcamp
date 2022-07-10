@@ -1,12 +1,13 @@
 import random
 
+# Intro message
 intro_message = "Welcome to the dices games!"
 
 
 def dice_roll():
 
     while True:
-        # Reference for sum at the end of code
+        # Reference for sum of rolled numbers at the end of code
         sum_all = 0
 
         try:
@@ -22,18 +23,18 @@ def dice_roll():
 
                     continue
 
-                # Correct usage
+                # Checking for correct usage
                 elif int(number_of_rolled_dice) >= 1 or int(number_of_rolled_dice) <= 8:
 
                     # Generating random rolled dice number
                     for dice_number in range(int(number_of_rolled_dice)):
 
-                        # Condition and statement for 1 dice
+                        # Condition and statement if roll 1 dice
                         if int(number_of_rolled_dice) == 1:
                             rolled_number = random.randint(1, 6)
                             print(f"RESULT: {rolled_number}")
 
-                        # Condition and statement for multiple dices
+                        # Condition and statement if roll multiple dices
                         elif int(number_of_rolled_dice) != 1:
                             rolled_number = random.randint(1, 6)
                             sum_all += rolled_number
@@ -46,7 +47,7 @@ def dice_roll():
                 # Break out of second loop
                 break
 
-        # Checking for anything other than integer between 1 and 8
+        # Checking for usage error
         except ValueError:
             print("USAGE: The number must be between 1 and 8")
 
@@ -56,4 +57,5 @@ def dice_roll():
         break
 
 
+# Call for function
 dice_roll()
