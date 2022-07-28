@@ -12,13 +12,9 @@ def oct_to_hex(x):
 
         return print(hexnum)
 
-
-
     except ValueError:
 
         print("This is not a octal number")
 
 
 oct_to_hex('1271')
-
-

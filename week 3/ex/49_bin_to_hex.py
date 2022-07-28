@@ -1,11 +1,14 @@
 def bin_to_hex(x):
 
     try:
+
         binnum = x
 
         decnum = int(binnum, 2)
 
         hexnum = hex(decnum).replace("0x", "")
+
+        print(f"bin_to_hex({x})")
 
         return print(hexnum)
 
@@ -13,7 +16,5 @@ def bin_to_hex(x):
 
         print("This is not a binary number")
 
-
-print("bin_to_hex(11001101)")
 
 bin_to_hex('11001101')

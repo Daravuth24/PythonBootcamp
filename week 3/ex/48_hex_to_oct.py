@@ -1,14 +1,20 @@
 def hex_to_oct(x):
 
-    hexnum = x
+    try:
 
-    decnum = int(hexnum, 16)
+        hexnum = x
 
-    octnum = oct(decnum).replace("0o", "")
+        decnum = int(hexnum, 16)
 
-    return print(octnum)
+        octnum = oct(decnum).replace("0o", "")
 
+        print(f"hex_to_oct({x})")
 
-print("oct_to_hex(2b9)")
+        return print(octnum)
+
+    except ValueError:
+
+        print("This is not a hexa-decimal number")
+
 
 hex_to_oct('2b9')
