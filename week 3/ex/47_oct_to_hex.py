@@ -1,14 +1,24 @@
 def oct_to_hex(x):
 
-    octnum = x
+    try:
 
-    decnum = int(octnum, 8)
+        octnum = x
 
-    hexnum = hex(decnum).upper().replace("0X", "")
+        decnum = int(octnum, 8)
 
-    return print(hexnum)
+        hexnum = hex(decnum).upper().replace("0X", "")
+
+        print(f"oct_to_hex({x})")
+
+        return print(hexnum)
 
 
-print("oct_to_hex(1271)")
+
+    except ValueError:
+
+        print("This is not a octal number")
+
 
 oct_to_hex('1271')
+
+

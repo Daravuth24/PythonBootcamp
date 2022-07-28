@@ -8,13 +8,13 @@ def bin_to_oct(x):
 
         octnum = oct(decnum).replace("0o", "")
 
+        print(f"bin_to_oct({x})")
+
         return print(octnum)
 
     except ValueError:
 
         print("This is not a binary number")
 
-
-print("bin_to_oct(11001101)")
 
 bin_to_oct('11001101')
