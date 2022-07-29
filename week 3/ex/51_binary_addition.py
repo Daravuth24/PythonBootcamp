@@ -4,7 +4,7 @@ def binary_addition(x, y):
 
     binnumy = bin(y).replace("0b", "")
 
-    sumbin = bin(x+y).replace("0b", "")
+    sumbin = bin(x + y).replace("0b", "")
 
     sumdec = x + y
 
