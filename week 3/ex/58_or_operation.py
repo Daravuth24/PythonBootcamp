@@ -16,7 +16,7 @@ def and_operation(x, y):
 
         binnum2 = bin(decnum2).replace("0b", "")
 
-        return print(f"{binnum1} \n{binnum2} \n\n")
+        return print(f"{decnum1} \n{decnum2} \n\n{bin(51 & 61)}")
 
     except ValueError:
 

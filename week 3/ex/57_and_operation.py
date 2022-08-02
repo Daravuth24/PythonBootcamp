@@ -1,5 +1,5 @@
 def and_operation(x, y):
-
+    lst = []
     list1 = []
     list2 = []
     try:
@@ -20,11 +20,13 @@ def and_operation(x, y):
 
         for i in binnum1:
             list1.append(i)
-            for j in binnum2:
-                list2.append(j)
-                
+        for j in binnum2:
+            list2.append(j)
+        for t in range(len(list1)):
+            listadd = (int(list1[t]) + int(list2[t]))
+            lst.append(listadd)
         print(f"{binnum1} \n{binnum2} \n\n")
-        print(list1, list2, list)
+        print(lst)
 
     except ValueError:
 
