@@ -1,8 +1,8 @@
-def and_operation(x, y):
+def or_operation(x, y):
 
     try:
 
-        print(f"and_operation({x, y})")
+        print(f"or_operation({x, y})")
 
         hexnum1 = x
 
@@ -16,11 +16,13 @@ def and_operation(x, y):
 
         binnum2 = bin(decnum2).replace("0b", "")
 
-        return print(f"{decnum1} \n{decnum2} \n\n{bin(51 & 61)}")
+        binand = bin(decnum1 | decnum2)
+
+        print(f"{binnum1} \n{binnum2} \n\n{binand.replace('0b','')}")
 
     except ValueError:
 
         print("This is not a hexa-decimal number")
 
 
-and_operation("33", "3D")
+or_operation("33", "3D")
