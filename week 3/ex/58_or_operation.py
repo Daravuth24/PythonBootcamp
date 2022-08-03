@@ -16,9 +16,9 @@ def or_operation(x, y):
 
         binnum2 = bin(decnum2).replace("0b", "")
 
-        binand = bin(decnum1 | decnum2)
+        binor = bin(decnum1 | decnum2)
 
-        print(f"{binnum1} \n{binnum2} \n\n{binand.replace('0b','')}")
+        print(f"{binnum1} \n{binnum2} \n\n{binor.replace('0b','')}")
 
     except ValueError:
 
