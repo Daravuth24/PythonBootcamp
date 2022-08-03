@@ -1,7 +1,4 @@
 def and_operation(x, y):
-    lst = []
-    list1 = []
-    list2 = []
     try:
 
         print(f"and_operation({x, y})")
@@ -18,15 +15,9 @@ def and_operation(x, y):
 
         binnum2 = bin(decnum2).replace("0b", "")
 
-        for i in binnum1:
-            list1.append(i)
-        for j in binnum2:
-            list2.append(j)
-        for t in range(len(list1)):
-            listadd = (int(list1[t]) + int(list2[t]))
-            lst.append(listadd)
-        print(f"{binnum1} \n{binnum2} \n\n")
-        print(lst)
+        binand = bin(decnum1 & decnum2)
+        
+        print(f"{binnum1} \n{binnum2} \n\n{binand.replace('0b','')}")
 
     except ValueError:
 
