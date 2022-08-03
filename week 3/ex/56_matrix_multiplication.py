@@ -7,7 +7,7 @@ def matrix_addition(x, y):
 
     m2 = matrix(y)
 
-    if len(x) == len(y):
+    if m1.shape == m2.shape:
 
         m3 = m1 * m2
 
@@ -18,6 +18,7 @@ def matrix_addition(x, y):
         print(f"The result matrix is: \n \n{m3}")
 
     else:
+
         print("Error")
 
 
