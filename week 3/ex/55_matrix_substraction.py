@@ -1,7 +1,7 @@
 from numpy import *
 
 
-def matrix_addition(x, y):
+def matrix_substraction(x, y):
 
     m1 = matrix(x)
 
@@ -16,4 +16,4 @@ def matrix_addition(x, y):
     print(f"The result matrix is: \n \n{m3}")
 
 
-matrix_addition('10 5 4 2; 5 10 9 55; 9 19 69 8; 7 8 4 5', '12 65 34 2; 1 5 8 45; 7 21 63 8; 0 78 4 65')
+matrix_substraction('10 5 4 2; 5 10 9 55; 9 19 69 8; 7 8 4 5', '12 65 34 2; 1 5 8 45; 7 21 63 8; 0 78 4 65')

@@ -1,7 +1,7 @@
 from numpy import *
 
 
-def matrix_addition(x, y):
+def matrix_multiplication(x, y):
 
     m1 = matrix(x)
 
@@ -22,4 +22,4 @@ def matrix_addition(x, y):
         print("Error")
 
 
-matrix_addition('3 7 5; 2 6 7; 4 3 2', '6 5 4; 3 2 1; 1 2 3')
+matrix_multiplication('3 7 5; 2 6 7; 4 3 2', '6 5 4; 3 2 1; 1 2 3')
