@@ -14,7 +14,7 @@ def write_file(name, content):
 
                 else:
                     print("Invalid Option")
-                break
+                    break
 
         except FileExistsError:
             continue
