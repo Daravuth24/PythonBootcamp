@@ -29,5 +29,5 @@ def delete_file(filename):
         return 0
 
 
-delete_file("test.py")
+delete_file("folder1")
 
