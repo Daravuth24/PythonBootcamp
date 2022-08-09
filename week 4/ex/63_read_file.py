@@ -3,8 +3,9 @@ def read_file(x):
     try:
 
         fileread = open(x, 'r')
-        print(fileread.read())
-        return fileread.read()
+        filereadstring = "".join(fileread)
+        print(f"{filereadstring}")
+        fileread.close()
 
     except FileNotFoundError:
 

@@ -7,9 +7,9 @@ def current_folder():
     currentdir = os.listdir(fpath)
 
     for i in currentdir:
-        checkfile2 = os.path.isfile(i)
+        checkfile = os.path.isfile(i)
 
-        if checkfile2:
+        if checkfile:
             check1 = "File"
 
         else:
