@@ -1,21 +1,8 @@
-[{
-	"title":"week 01",
-	"content":"python syntax",
-	"difficulty":"very easy"
- },
- {
-	"title":"week 02",
-	"content":"python data manipulation",
-	"difficulty":"easy"
- },
- {
-	"title":"week 03",
-	"content":"python files and requests",
-	"difficulty":"intermediate"
- },
- {
-	"title":"week 04",
-	"content":"python class and advanced concepts",
-	"difficulty":"hard"
- }
-]
+{
+    "completed": {
+        "completed": "False",
+        "id": "3",
+        "title": "fugiat veniam minus",
+        "userId": "1"
+    }
+}
