@@ -1,8 +1,27 @@
 import json
+import csv
 import os
 
+def tsv_to_json(tsvname, jsonname):
 
-def tsv_to_json():
-    pass
+    if os.path.exists(tsvname):
+        data = {}
+        with open(tsvname) as tsvfile:
+            tsvread = csv.DictReader(tsvfile)
+            for tsvrow in tsvread:
+                completed = tsvrow("completed")
+                data[completed] = tsvrow
 
-tsv_to_json()
+        root = {}
+        root["completed"] = data
+
+        with open(jsonname, "w") as jsonfile:
+            jsonfile.write(json.dumps(data, indent=4))
+        return 1
+    else:
+        return 0
+
+
+
+
+tsv_to_json("sampletsv2.tsv", "samplejson2.json")
